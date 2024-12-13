@@ -1,0 +1,143 @@
+.friends-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    /* Enhanced shadow for a more modern look */
+    margin: 20px auto;
+    max-width: 900px;
+    /* Limiting width for better readability */
+}
+
+.friends-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    /* Slightly lighter than bold */
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    /* Added uppercase for a more impactful title */
+    letter-spacing: 1px;
+    /* Slight spacing for improved legibility */
+}
+
+.friends-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* Increased gap for better spacing between items */
+}
+
+.friend-item {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: 1px solid #f0f0f0;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #ddd;
+}
+
+.friend-item:hover {
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Slight shadow on hover */
+    transform: translateY(-2px);
+    /* Small lift effect */
+}
+
+.friend-profile {
+    margin-right: 20px;
+    /* Increased margin for better spacing */
+}
+
+.friend-profile-pic {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ddd;
+    /* Border around the profile picture */
+    transition: border 0.3s ease;
+    /* Smooth border transition */
+}
+
+.friend-profile-pic:hover {
+    border-color: #007BFF;
+    /* Change border color on hover */
+}
+
+.friend-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: calc(100% - 120px);
+    /* Prevents text from overflowing */
+    gap: 5px;
+    /* Spacing between name and mutual friends */
+}
+
+.friend-name {
+    font-size: 1.2rem;
+    font-weight: 500;
+    /* Slightly lighter than bold */
+    color: #333;
+    margin-bottom: 5px;
+    /* Space between name and mutual friends */
+    transition: color 0.3s ease;
+    /* Smooth color transition */
+}
+
+.friend-name:hover {
+    color: #007BFF;
+    /* Color change on hover for interactive feel */
+}
+
+.mutual-friends {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+@media (max-width: 768px) {
+    .friends-list {
+        gap: 10px;
+        /* Reduce gap on smaller screens */
+    }
+
+    .friend-item {
+        flex-direction: column;
+        align-items: flex-start;
+        /* Stack profile and info vertically */
+        text-align: left;
+        /* Ensure proper text alignment on smaller screens */
+    }
+
+    .friend-profile {
+        margin-right: 0;
+        margin-bottom: 15px;
+        /* Add space between profile pic and name/info */
+    }
+
+    .friend-profile-pic {
+        width: 80px;
+        height: 80px;
+        /* Smaller profile pic on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .friends-title {
+        font-size: 1.4rem;
+        /* Smaller title font on very small screens */
+    }
+
+    .friend-item {
+        padding: 10px;
+        /* Adjust padding on very small screens */
+    }
+}

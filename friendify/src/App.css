@@ -1,0 +1,19 @@
+/* Apply to all elements or a specific container */
+::-webkit-scrollbar {
+  width: 6px; /* Adjust the width of the scrollbar */
+  height: 6px; /* For horizontal scrollbar, if needed */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fff;
+  border-radius: 10px; /* Round the edges of the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ddd;
+  border-radius: 10px; /* Round the edges of the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #888;
+}

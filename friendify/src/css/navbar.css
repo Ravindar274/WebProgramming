@@ -1,0 +1,52 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; /* Space between icons */
+  padding: 0px 14px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav-list li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  text-decoration: none;
+  background-color: #f3f4f6; /* Light gray background */
+  color: #6b7280; /* Gray for inactive icons */
+  transition: all 0.3s ease;
+}
+
+.nav-list li a.active,
+.nav-list li a:hover {
+  background-color: #e0efff; /* Light blue on hover/active */
+  color: #2563eb; /* Blue color for active icons */
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+.navbaricon {
+  width: 20px; /* Adjust icon size */
+  height: 20px;
+}
+
+/* Add spacing for alignment */
+.navbaricon + i {
+  margin-left: 5px;
+}

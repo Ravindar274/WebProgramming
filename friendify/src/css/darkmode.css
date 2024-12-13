@@ -1,0 +1,75 @@
+/* src/css/darkmode.css */
+
+body.dark-mode {
+    background: linear-gradient(120deg, #4a5c51, #2a424c);
+    color: #ffffff; /* Light text */
+  }
+  
+  body.dark-mode header {
+    background: linear-gradient(120deg, #07180d, #23363e); /* Dark theme for all sections */
+  }
+
+
+  body.dark-mode footer {
+    background: linear-gradient(120deg,#23363e, #07180d); /* Dark theme for all sections */
+  }
+
+  body.dark-mode aside,
+  body.dark-mode main{
+    background-color: #000; /* Dark theme for all sections */
+  }
+
+  body.dark-mode aside .ulist li .menu-item span {
+    color: #ffffff; 
+  }
+
+  body.dark-mode aside .ulist li .menu-item:hover span{
+    color: #000; 
+  }
+  
+  body.dark-mode .navbaricondark {
+    filter: invert(1); /* Lighten icons in dark mode */
+  }
+  
+  body.dark-mode .content-main {
+    background-color: #000000; /* Dark background for content */
+  }
+
+  body.dark-mode .post {
+    background-color: #000000;
+  }
+
+  body.dark-mode .post-text{
+    color: #fff;
+  }
+
+  body.dark-mode .user-info{
+    color: #fff;
+  }
+
+  body.dark-mode .chat-last-message{
+    color: #fff;
+  }
+
+  body.dark-mode .user-info{
+    color: #fff;
+  }
+  body.dark-mode .chat-last-message{
+    color: #fff;
+  }
+
+  body.dark-mode .chat-popover{
+    background-color: #000000;
+  }
+
+  body.dark-mode .notifications-popover{
+    background-color: #000000;
+  }
+
+  body.dark-mode  .video-username{
+    color: #000000;
+  }
+
+
+  /* Additional overrides as needed for other elements */
+  
